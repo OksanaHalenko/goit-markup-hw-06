@@ -1,3 +1,6 @@
+.hige {
+  display: none;
+}
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
@@ -28,11 +31,23 @@ img {
   height: auto;
 }
 .container {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 .visually-hidden {
   position: absolute;
@@ -130,7 +145,8 @@ img {
 .hero {
   max-width: 1440px;
   background-color: #2e2f42;
-  padding: 188px 0;
+  padding: 72px 0;
+  margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -139,18 +155,40 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero/people-office.jpg);
-  margin: 0 auto;
+}
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding: 112px 0;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .hero {
+    padding: 188px 0;
+  }
 }
 .hero-title {
   color: #fff;
   text-align: center;
-  font-size: 56px;
+  font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.07;
-  letter-spacing: 1.12px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin: 0 42px 72px 42px;
   max-width: 496px;
-  margin: 0 auto 48px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    margin: 0 auto 36px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .hero-title {
+    margin: 0 auto 48px;
+  }
 }
 .hero-button {
   font-family: 'Roboto', sans-serif;
@@ -176,14 +214,41 @@ img {
   cursor: pointer;
 }
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
-
+@media only screen and (min-width: 1158px) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
 .abaut-box {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
+  justify-content: center;
 }
+.abaut-li {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .abaut-box {
+    gap: 72px 24px;
+  }
+  .abaut-li {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .abaut-box {
+    gap: 24px;
+  }
+  .abaut-li {
+    width: calc((100% - 72px) / 4);
+  }
+}
+
 .abaut-wrapper {
   display: flex;
   align-items: center;
@@ -194,46 +259,82 @@ img {
   border-radius: 4px;
   margin-bottom: 8px;
 }
+@media only screen and (max-width: 1157.98px) {
+  .abaut-wrapper {
+    display: none;
+  }
+}
 .abaut-title {
-  font-size: 20px;
+  text-align: center;
+  font-size: 36px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.4px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
   margin-bottom: 8px;
+}
+@media only screen and (min-width: 1158px) {
+  .abaut-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: left;
+  }
 }
 .abaut-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
-.abaut-li {
-  flex-basis: calc((100% - 72px) / 4);
+@media only screen and (max-width: 1157.98px) {
+  .abaut-text {
+    font-weight: 500;
+  }
 }
 .team {
   background-color: #f4f4fd;
 }
 .team-title {
-  text-align: center;
-  font-size: 36px;
+  margin-bottom: 72px;
   font-style: normal;
+  font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
   letter-spacing: 0.72px;
+  text-align: center;
   text-transform: capitalize;
-  margin-bottom: 72px;
 }
 .team-box {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
+  justify-content: center;
 }
 .list {
+  max-width: 264px;
   background-color: #fff;
   border-radius: 0px 0px 4px 4px;
-  flex-basis: calc((100% - 72px) / 4);
+
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+@media only screen and (min-width: 768px) {
+  .team-box {
+    gap: 64px 24px;
+  }
+  .list {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .team-box {
+    gap: 24px;
+  }
+  .list {
+    width: calc((100% - 72px) / 4);
+  }
 }
 .team-segn {
   padding: 32px 0;
@@ -291,27 +392,50 @@ img {
   font-style: normal;
   font-weight: 700;
   line-height: 1.11;
-  letter-spacing: 0.72px;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
   margin-bottom: 72px;
 }
 .portfolio-box {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  gap: 48px;
 }
 
 .portfolio-cards {
-  width: calc((100% - 48px) / 3);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  border: 1px solid #f4f4fd;
 }
-.portfolio-cards:hover,
-.portfolio-cards:focus {
-  transform: translateY(0%);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+@media only screen and (max-width: 1157.98px) {
+  .portfolio-cards {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .portfolio-box {
+    gap: 72px 24px;
+  }
+  .portfolio-cards {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .portfolio-box {
+    gap: 48px 24px;
+  }
+  .portfolio-cards {
+    width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .portfolio-cards:hover,
+  .portfolio-cards:focus {
+    transform: translateY(0%);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  }
 }
 .overlay {
   position: relative;
@@ -338,6 +462,7 @@ img {
 .portfolio-cards:hover .overlay-text {
   transform: translateY(0);
 }
+
 .portfolio-segn {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
