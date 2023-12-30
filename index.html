@@ -21,12 +21,17 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header-border hige">
+    <header class="header-border">
       <div class="container header">
         <nav class="header-nav">
           <a href="./index.html" class="logo"
             >Web<span class="studio">Studio</span>
           </a>
+          <button class="menu-btn" type="button" aria-label="Open menu button">
+            <svg class="icon-menu" width="24" height="24">
+              <use href="./images/icons.svg#icon-menu" />
+            </svg>
+          </button>
           <ul class="header-ul">
             <li><a href="./index.html" class="navi active">Studio</a></li>
             <li><a href="" class="navi">Portfolio</a></li>
@@ -55,7 +60,7 @@
         </div>
       </section>
 
-      <section class="abaut section">
+      <section class="abaut section hige">
         <div class="container">
           <h2 class="visually-hidden">About Us</h2>
           <ul class="abaut-box">
@@ -111,7 +116,7 @@
         </div>
       </section>
 
-      <section class="team section">
+      <section class="team section hige">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-box">
@@ -279,7 +284,7 @@
         </div>
       </section>
 
-      <section class="portf section">
+      <section class="portf section hige">
         <div class="container">
           <h2 class="portfolio">Our Portfolio</h2>
           <ul class="portfolio-box">
@@ -542,6 +547,68 @@
           <button class="form-btn" type="submit" disabled>Send</button>
         </form>
       </div>
+    </div>
+
+    <!-- mobile menu -->
+    <div class="mobile-menu">
+      <button
+        class="menu-close-btn"
+        type="button"
+        aria-label="Menu close button"
+      >
+        <svg class="menu-clocse-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="menu-ul">
+        <li class="menu-item">
+          <a class="menu-link active" href="./index.html">Studio</a>
+        </li>
+        <li class="menu-item"><a class="menu-link" href="">Portfolio</a></li>
+        <li class="menu-item"><a class="menu-link" href="">Contacts</a></li>
+      </ul>
+      <ul class="menu-adress-items">
+        <li class="menu-adress-item">
+          <a class="menu-adress-link accent" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a class="menu-adress-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-socials">
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-socials-link">
+            <svg class="social-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-socials-link">
+            <svg class="social-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-socials-link">
+            <svg class="social-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-socials-link">
+            <svg class="social-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
