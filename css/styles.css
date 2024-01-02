@@ -155,10 +155,9 @@ img {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  
 }
 @media only screen and (min-width: 1158px) {
-  .adress-ul{
+  .adress-ul {
     flex-direction: row;
     gap: 40px;
   }
@@ -541,7 +540,6 @@ img {
 .footer {
   background-color: #2e2f42;
   padding: 96px 0;
-  
 }
 @media only screen and (min-width: 1158px) {
   .footer {
@@ -550,10 +548,9 @@ img {
 }
 .footer-wrapper {
   display: flex;
-  
 }
 @media only screen and (max-width: 767.98px) {
-  .footer-wrapper{
+  .footer-wrapper {
     flex-direction: column;
     gap: 72px;
     text-align: center;
@@ -573,12 +570,9 @@ img {
     flex-wrap: nowrap;
   }
 }
-.footer-box {
-  
-}
 @media only screen and (min-width: minwidthpx) {
   .footer-box {
-     margin-right: 120px;
+    margin-right: 120px;
   }
 }
 .logo-footer {
@@ -632,8 +626,7 @@ img {
 @media only screen and (min-width: 1158px) {
   .footer-subscribe {
     margin-left: auto;
-  }     
-  
+  }
 }
 .subscribe-caption {
   margin-bottom: 16px;
@@ -646,7 +639,6 @@ img {
   display: flex;
   align-items: center;
   gap: 16px;
-  
 }
 @media only screen and (max-width: 767.98px) {
   .subscribe-form {
@@ -654,7 +646,7 @@ img {
   }
 }
 @media only screen and (min-width: 768px) {
-  .subscribe-form{
+  .subscribe-form {
     gap: 24px;
   }
 }
@@ -712,6 +704,7 @@ img {
   justify-content: center;
   width: 100%;
   height: 100%;
+
   border-radius: 4px;
   background-color: rgba(46, 47, 66, 0.4);
 
@@ -731,7 +724,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
+  width: 288px;
   min-height: 584px;
   padding: 24px;
   padding-top: 72px;
@@ -740,6 +733,11 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media only screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+  }
 }
 .modal-btn,
 .menu-close-btn {
