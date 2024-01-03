@@ -1,6 +1,3 @@
-.hige {
-  display: none;
-}
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
@@ -59,6 +56,7 @@ img {
 
   white-space: nowrap;
   clip-path: inset(100%);
+  /* clip: rect(0, 0, 0, 0); */
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -165,7 +163,7 @@ img {
 .adress {
   font-size: 12px;
   font-weight: 400;
-  line-height: 1, 17;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   font-weight: 400;
 
@@ -201,16 +199,53 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero/people-office.jpg);
+    url(../images/hero/Dark-bg_mob.jpg);
+}
+@media only screen and (max-width: 767.98px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/Dark-bg_mob@2x.jpg);
+  }
 }
 @media only screen and (min-width: 768px) {
   .hero {
     padding: 112px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/Dark-bg_tab.jpg);
+  }
+}
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/Dark-bg_tab@2x.jpg);
   }
 }
 @media only screen and (min-width: 1158px) {
   .hero {
     padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-office_desk.jpg);
+  }
+}
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/people-office_desk@2x.jpg);
   }
 }
 .hero-title {
@@ -556,12 +591,12 @@ img {
     text-align: center;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1157.98px) {
   .footer-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0 108px;
-    gap: 24px 72px;
+    gap: 72px 24px;
   }
 }
 @media only screen and (min-width: 1158px) {
@@ -569,8 +604,6 @@ img {
     align-items: baseline;
     flex-wrap: nowrap;
   }
-}
-@media only screen and (min-width: minwidthpx) {
   .footer-box {
     margin-right: 120px;
   }
@@ -751,7 +784,6 @@ img {
   height: 24px;
   padding: 0;
   cursor: pointer;
-  color: #e7e9fc;
   background-color: #e7e9fc;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
