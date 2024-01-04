@@ -179,6 +179,7 @@ img {
   }
 }
 @media only screen and (max-width: 767.98px) {
+  .adr,
   .adress {
     display: none;
   }
@@ -491,7 +492,6 @@ img {
 
 .portfolio-cards {
   width: 100%;
-  border: 1px solid #f4f4fd;
 }
 
 @media only screen and (max-width: 1157.98px) {
@@ -759,7 +759,8 @@ img {
   transform: translate(-50%, -50%) scale(1);
   width: 288px;
   min-height: 584px;
-  padding: 24px;
+  padding: 17px;
+
   padding-top: 72px;
   border-radius: 4px;
   background-color: #fcfcfc;
@@ -770,6 +771,7 @@ img {
 @media only screen and (min-width: 768px) {
   .modal {
     width: 408px;
+    padding: 24px;
   }
 }
 .modal-btn,
@@ -889,7 +891,8 @@ img {
   margin-bottom: 24px;
 }
 .form-agreement {
-  display: block;
+  display: flex;
+  align-items: center;
   color: #8e8f99;
   font-size: 12px;
   line-height: 1.17;
@@ -900,6 +903,7 @@ img {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   margin-right: 8px;
   fill: transparent;
   width: 16px;
@@ -1011,4 +1015,5 @@ img {
 }
 .mobile-menu > .mobile-socials {
   gap: 40px;
+  justify-content: left;
 }
